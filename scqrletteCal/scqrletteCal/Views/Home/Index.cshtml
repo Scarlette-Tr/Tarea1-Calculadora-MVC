@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div id="Calculadora">
+       
+        <form name="Operaciones">
+            <h1>Calculadora</h1>
+            <input id="text" type="textfield" name="ans" value="" autocomplete="of" readonly>
+
+            <div class="con">
+            <input type="button" value="7" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='7 '">
+            <input type="button" value="8" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='8 '">
+            <input type="button" value="9" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='9 '">
+            <input type="button" value="+" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='+ '">
+            </div>
+
+             <div class="con">
+            <input type="button" value="4" class="btn btn-dark b" class="btn btn-primary" onclick="document.Operaciones.ans.value+='4 '">
+            <input type="button" value="5" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='5 '">
+            <input type="button" value="6" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='6 '" >
+            <input type="button" value="-" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='- '"> 
+            </div>
+            
+
+             <div class="con">
+            <input type="button" value="1" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='1 '">
+            <input type="button" value="2" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='2 '">
+            <input type="button" value="3" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='3 '">
+            <input type="button" value="X" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='* '">
+            </div>
+
+             <div class="con">
+            <input type="button" value="0" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='0 '">
+            <input type="reset"  value="C" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='C '" >
+            <input type="button" value="=" class="btn btn-dark b" onclick="document.Operaciones.ans.value=eval(document.Operaciones.ans.value)">
+            <input type="button" value="/" class="btn btn-dark b" onclick="document.Operaciones.ans.value+='/ '">
+            </div>
+
+    
+        </form>
